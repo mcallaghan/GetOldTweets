@@ -55,7 +55,7 @@ public class Main {
 
 					since = starts[i];
 					until = ends[i];
-					filename = "../data/GOToutput/"+query+"_"+since+"_"+until+".txt";	
+					filename = "../data/"+query+"_"+since+"_"+until+".txt";	
 
 					criteria = TwitterCriteria.create()
 							.setQuerySearch(query)

@@ -55,7 +55,7 @@ public class Main {
 
 					since = starts[i];
 					until = ends[i];
-					filename = "../data/"+query+"_"+since+"_"+until+".txt";	
+					filename = "../data/GOToutput/"+query+"_"+since+"_"+until+".txt";	
 
 					criteria = TwitterCriteria.create()
 							.setQuerySearch(query)
@@ -84,9 +84,13 @@ public class Main {
 
 						dateString = sdf.format(t.getDate());
 
+						bw.write(t.getTweet_id());
+						bw.write("\t");
 						bw.write(t.getText());
 						bw.write("\t");
 						bw.write(t.getUsername());
+						bw.write("\t");
+						bw.write(t.getUser_id());
 						bw.write("\t");
 						bw.write(dateString);
 						bw.write("\n");

@@ -26,7 +26,7 @@ public class Tweet {
 	public Tweet() {
 	}
 
-	public Tweet(String tweet_id, String username, String user_id, String text, Date date, int retweets,
+	public Tweet(tweet_id, String username, String user_id, String text, Date date, int retweets,
 			int favorites) {
 		this.tweet_id = tweet_id;
 		this.username = username;

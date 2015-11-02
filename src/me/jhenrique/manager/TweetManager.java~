@@ -98,7 +98,7 @@ public class TweetManager {
 					long dateMs = Long.valueOf(tweet.select("small.time span.js-short-timestamp").attr("data-time-ms"));
 					Date date = new Date(dateMs);
 					
-					Tweet t = new Tweet(tweet_id, usernameTweet, user_id, txt, date, retweets, favorites);
+					Tweet t = new Tweet(usernameTweet, user_id, txt, date, retweets, favorites);
 					results.add(t);
 
 					//system.out.print(user_id);

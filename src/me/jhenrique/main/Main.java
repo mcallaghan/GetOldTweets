@@ -84,9 +84,17 @@ public class Main {
 
 						dateString = sdf.format(t.getDate());
 
+						if(j==0) {
+							bw.write("tweet_id\ttext\tusername\tuser_id\tdate\n");
+						}
+
+						bw.write(t.getTweet_id());
+						bw.write("\t");
 						bw.write(t.getText());
 						bw.write("\t");
 						bw.write(t.getUsername());
+						bw.write("\t");
+						bw.write(t.getUser_id());
 						bw.write("\t");
 						bw.write(dateString);
 						bw.write("\n");
